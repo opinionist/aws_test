@@ -3,6 +3,7 @@ package example.demo;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/asdf")
 public class AsdfController {
     @GetMapping
