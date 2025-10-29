@@ -4,11 +4,15 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/asdf")
 public class AsdfController {
     @GetMapping
     public String asdf(@RequestParam String name) {
         return name + "GEt TEST 입니다.";
+    }
+
+    @GetMapping("/test")
+    public String zxcv() {
+        return "TEST 입니다.";
     }
 
     @PostMapping
