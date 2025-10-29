@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @CrossOrigin(origins = "*")
 public class AsdfController {
-    @GetMapping
+    @GetMapping("/test")
     public String asdf(@RequestParam String name) {
         return name + "GEt TEST 입니다.";
     }
 
-    @GetMapping("/test")
+    @GetMapping
     public String zxcv() {
         return "TEST 입니다.";
     }
